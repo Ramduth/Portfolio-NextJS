@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Hero from "./Hero/Hero";
+import SkillsCarousel from "./skills/SkillsCarousel";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,6 +19,7 @@ export default function Home() {
     <div className="">
       <Navbar />
       <Hero />
+      <SkillsCarousel/>
     </div>
   );
 }
