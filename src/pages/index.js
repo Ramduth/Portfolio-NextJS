@@ -3,6 +3,9 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Hero from "./Hero/Hero";
 import SkillsCarousel from "./skills/SkillsCarousel";
+import Projects from "./projects/Projects";
+import About from "./about/About";
+import ContactMe from "./contactme/ContactMe";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,7 +22,10 @@ export default function Home() {
     <div className="">
       <Navbar />
       <Hero />
+      <Projects />
       <SkillsCarousel/>
+      <About />
+      {/* <ContactMe /> */}
     </div>
   );
 }
